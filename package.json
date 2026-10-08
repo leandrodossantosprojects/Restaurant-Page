@@ -1,0 +1,27 @@
+{
+  "name": "retaurant-page",
+  "version": "1.0.0",
+  "description": "A restaurant page for The Odin Project curriculum",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leandrodossantosprojects/Restaurant-Page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/leandrodossantosprojects/Restaurant-Page/issues"
+  },
+  "homepage": "https://github.com/leandrodossantosprojects/Restaurant-Page#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.6.8",
+    "webpack": "^5.111.1",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^6.0.0"
+  }
+}
