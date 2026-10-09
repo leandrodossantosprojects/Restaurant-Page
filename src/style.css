@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "Console";
+  src: url("../public/fonts/Classi-console-Neue/clacon2.woff2");
+}
+
+* {
+  font-family: "Console", Fallback, sans-serif;
+  box-sizing: border-box;
+  background-color: black;
+  color: #00ff00;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+header {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 10%;
+  border-bottom: 3px solid #00ff00;
+}
+
+#terminal-console {
+  margin: auto;
+  height: 70%;
+  width: 50%;
+  border: solid 3px #a2a4a6;
+}
+
+#home-banner-ascii {
+  font-size: clamp(0.5rem, 1vw, 1rem);
+}
