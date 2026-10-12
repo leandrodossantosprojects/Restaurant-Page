@@ -13,13 +13,13 @@ body {
   height: 100vh;
   width: 100vw;
   display: grid;
-  grid-template-rows: 1fr 9fr;
+  grid-template-rows: 8% 9fr;
 }
 
 header {
   grid-area: 1/1/2/2;
   display: grid;
-  grid-rows-template: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   background-color: #c0c0c0;
 }
 
@@ -34,12 +34,20 @@ header div {
 }
 
 header div p {
-  font-size: 2rem;
+  font-size: 1rem;
   vertical-align: center;
-  margin-left: 1%;
+  margin-left: 10px;
+}
+
+header div img {
+  height: 1.5rem;
+  width: auto;
+  margin-left: 10px;
+  border: 1px solid #c0c0c0;
 }
 
 header nav {
+  grid-row: 2/3;
   border-left: 5px ridge #c0c0c0;
   border-right: 5px ridge #c0c0c0;
   display: flex;
@@ -47,43 +55,29 @@ header nav {
 }
 
 nav button {
-  grid-row: 2/3;
-  font-size: 1.2rem;
-  margin-left: 1%;
-  padding: 10px;
-  border: none;
+  padding: 3px;
+  border: 3px solid rgba(0, 0, 0, 0);
   background: none;
-  widht: 100px;
-  border: 3px solid #c0c0c0;
+  margin-left: 10px;
+}
+
+nav button,
+header div p {
+  font-size: 1.2rem;
 }
 
 nav button:hover {
   border: 3px outset #c0c0c0;
 }
 
-#terminal-console {
+#console-menu,
+#console-about {
   color: #00ff00;
   grid-area: 2/1/3/2;
   height: 100%;
   background-color: #000000;
   border: 5px ridge #c0c0c0;
   padding: 10px;
-  font-size: 1.2rem;
-}
-
-#terminal-console,
-#home-console-description {
-  display: grid;
-  grid-template-rows: auto;
-  gap: 2px;
-}
-
-#home-banner-ascii,
-#welcome {
-  font-size: 1.2rem;
-  margin-left: 10%;
-}
-
-#hours {
+  font-size: 1rem;
   line-height: 1.1;
 }
